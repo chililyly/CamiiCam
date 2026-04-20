@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { FaInstagram } from 'react-icons/fa6'
+import { HiOutlineEnvelope } from 'react-icons/hi2'
 import SiteHeader from '../components/SiteHeader'
 import { isSupabaseReady, supabase } from '../lib/supabase'
 
@@ -33,7 +35,7 @@ export default function AboutPage() {
   return (
     <main className="section about-page">
       <SiteHeader />
-      
+
       <div className="about-layout">
         <div className="about-left">
           <h2 className="section-title">About</h2>
@@ -43,15 +45,18 @@ export default function AboutPage() {
               If you have any questions, feedback, or concerns, feel free to contact us through our social media accounts or through our contact form.
             </p>
           </div>
-
           <div className="contact-info">
             <div className="contact-item">
-              <span className="contact-icon">📷</span>
-              <span className="contact-label">@akhabla</span>
+              <span className="contact-icon" aria-hidden="true">
+                <FaInstagram />
+              </span>
+              <span className="contact-label">@camiicam</span>
             </div>
             <div className="contact-item">
-              <span className="contact-icon">✉️</span>
-              <span className="contact-label">eme@gmail.com</span>
+              <span className="contact-icon" aria-hidden="true">
+                <HiOutlineEnvelope />
+              </span>
+              <span className="contact-label">camiicam@gmail.com</span>
             </div>
           </div>
         </div>
