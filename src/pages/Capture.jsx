@@ -479,7 +479,7 @@ export default function CapturePage() {
       </div>
 
       <button className="pill-button start-capture-btn" type="button" onClick={startCapture} disabled={busy}>
-        {busy ? `Capturing${countdown ? ` (${countdown})` : ''}` : 'Start Capturing Process'}
+        {busy ? `Capturing${countdown ? ` (${countdown})` : ''}` : 'Start Capture'}
       </button>
 
       <p className="status-line">{captureStatus}</p>
