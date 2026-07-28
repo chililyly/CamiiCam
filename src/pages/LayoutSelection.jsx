@@ -26,12 +26,12 @@ export default function LayoutSelectionPage() {
       <h2 className="section-title">choose your layout</h2>
       <p className="layout-subtitle">Choose from an assortment of photo booth frame designs.</p>
       
-      <div className="layouts-carousel">
+      {/*<div className="layouts-carousel">
         <button className="carousel-arrow carousel-prev" type="button" aria-label="Previous layout">
           &#8249;
-        </button>
+        </button>*/}
 
-        <div className="layout-grid">
+      <div className="layout-grid">
           {layouts.map((layout) => (
             <button
               key={layout.id}
@@ -55,10 +55,10 @@ export default function LayoutSelectionPage() {
           ))}
         </div>
 
-        <button className="carousel-arrow carousel-next" type="button" aria-label="Next layout">
+        {/*<button className="carousel-arrow carousel-next" type="button" aria-label="Next layout">
           &#8250;
         </button>
-      </div>
+      </div>*/}
 
       <button className="pill-button continue-btn" type="button" onClick={handleContinue} disabled={!selectedLayoutId}>
         Continue
